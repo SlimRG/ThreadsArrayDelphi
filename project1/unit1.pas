@@ -78,6 +78,7 @@ begin
   for i := 0 to count do
   begin
        R2SThread[i].WaitFor;
+	   R2SThread[i].Free;   
        Form1.Memo1.Lines.Add(FloatToStr(result[i]));
   end;
 
